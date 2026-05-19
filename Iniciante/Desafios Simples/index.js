@@ -89,9 +89,8 @@ function calcFatorial(x) {
 //ESTUDAR
 
 //DESAFIO 08
-
-let a = [4, 2, 3, 4, 5, 6, 7];
-let target = 15;
+/* let a = [4, 2, 3, 4, 5, 6, 7];
+let target = 13;
 
 let b = a.entries();
 const copia = new Map();
@@ -106,4 +105,31 @@ for (const [indice, num] of b) {
         break;
     }
     copia.set(num, indice)
+} */
+
+//DESAFIO 09
+/* let vogais =new Set(["a", "e", "i", "o", "u"]);
+let frase = "abcde";
+let numVogal = 0;
+
+for (const letra of frase) {
+    if(vogais.has(letra)) {
+        numVogal++;
+        console.log(`Essa string tem ${numVogal} vogal(is).`);
+        }
+        } */
+       
+//DESAFIO 10
+fib(50)
+
+function fib(x) {
+    let fib = [];
+    for (let i = 0; i <= x; i++) {
+        if (i < 2) {
+            fib[i] = i;
+        }else{
+            fib[i] = fib[i-2] + fib[i-1];
+        }
+    }
+    console.log(fib[x]);
 }
