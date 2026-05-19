@@ -72,7 +72,7 @@ if (isPalindromo) {
 //PRECISO ESTUDAR
 
 //DESAFIO 06
-let g = 14;
+/* let g = 14;
 
 calcFatorial(g);
 
@@ -83,4 +83,27 @@ function calcFatorial(x) {
     }
     console.log(`Fatorial de ${x} = ${fatorial}`);
     
+} */
+
+//DESAFIO 07
+//ESTUDAR
+
+//DESAFIO 08
+
+let a = [4, 2, 3, 4, 5, 6, 7];
+let target = 15;
+
+let b = a.entries();
+const copia = new Map();
+
+for (const [indice, num] of b) {
+    let r = target - num;
+    let final = []
+    if (copia.has(r)) {
+        final.push(copia.get(r))
+        final.push(indice)
+        console.log(final);
+        break;
+    }
+    copia.set(num, indice)
 }
